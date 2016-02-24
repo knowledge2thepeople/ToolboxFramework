@@ -1,0 +1,7 @@
+*.zip
+*.jar
+*~
+\#*\#
+/bin/
+.classpath
+.project
