@@ -23,7 +23,6 @@ class DefaultConstructorToolBuilder implements ToolBuilder {
         this.type = type;
     }
 
-    @Override
     public Object buildTool() {
         try {
             return type.newInstance();

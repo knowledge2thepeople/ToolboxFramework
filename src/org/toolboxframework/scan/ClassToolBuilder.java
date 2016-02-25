@@ -25,7 +25,6 @@ class ClassToolBuilder implements ToolBuilder {
         this.type = type;
     }
 
-    @Override
     public Object buildTool() {
         ToolInjector.injectTools(type);
         return type;

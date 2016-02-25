@@ -27,7 +27,6 @@ public class MessagePrinter implements IMessagePrinter {
     @UseTool
     private static PrintStream printStream;
 
-    @Override
     public void printMessage(final String message) {
         printStream.println(message);
     }

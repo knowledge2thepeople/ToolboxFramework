@@ -25,7 +25,6 @@ public class MessageService implements IMessageService {
     @UseTool
     private String message;
 
-    @Override
     public String getMessage() {
         return message;
     }

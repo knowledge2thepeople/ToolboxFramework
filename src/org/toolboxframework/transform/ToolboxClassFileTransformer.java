@@ -31,7 +31,6 @@ class ToolboxClassFileTransformer implements ClassFileTransformer {
         basePackages = normalized.split("[^\\w\\d/]+");
 
         Arrays.sort(basePackages, new Comparator<String>() {
-            @Override
             public int compare(final String a, final String b) {
                 return a.length() - b.length();
             }
@@ -40,7 +39,6 @@ class ToolboxClassFileTransformer implements ClassFileTransformer {
         classReader = new ClassReader();
     }
 
-    @Override
     public byte[] transform(final ClassLoader loader, final String className, final Class<?> classBeingRedefined,
             final ProtectionDomain protectionDomain, final byte[] classfileBuffer) throws IllegalClassFormatException {
 
